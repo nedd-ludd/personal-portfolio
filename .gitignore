@@ -30,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# steps
+project_steps.odt
