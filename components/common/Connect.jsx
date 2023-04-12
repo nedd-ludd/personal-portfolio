@@ -35,12 +35,17 @@ const GitHub = ({ padding = "p-3", size = 14 }) => {
 const CV = ({ padding = "p-3", size = 14 }) => {
   const className = `rounded-full shadow-lg shadow-gray-400 ${padding} cursor-pointer hover:scale-105 ease-in duration-300`;
   const sz = size;
+
   return (
-    <Link href="/resume">
-      <div onClick={() => setNav(!nav)} className={className}>
-        <BsFillPersonLinesFill size={sz} color="#38804f" />
-      </div>
-    </Link>
+    <a
+      href="/files/NathanHarrisCV.pdf"
+      alt="alt text"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      <BsFillPersonLinesFill size={sz} color="#38804f" />
+    </a>
   );
 };
 
